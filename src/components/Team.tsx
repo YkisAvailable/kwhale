@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: "王新平",
-    role: "首席工程师",
+    role: "首席产品架构师",
     image: "https://i.ibb.co/WtfDKtN/789505080521963086.png",
     bio: "30余年全栈开发专家，主导了多个大型AI项目的架构设计。"
   },
