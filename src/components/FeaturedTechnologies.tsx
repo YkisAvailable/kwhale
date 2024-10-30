@@ -10,7 +10,7 @@ const FeaturedTechnologies = () => {
       title: "Ginas客服",
       description: "Guided Interactive Notification and Assistance System",
       features: ["7x24在线", "千人千面", "使命必达", "降本增效"],
-      intro: "Ginas客服是一款革命性的AI客服系统，能够24/7为您的客户提供专业、高效的服务。它能够定制多种沟通风格，确保每位客户都能获得个性化的体验。在管理端上严格遵循我们的知识库以及业务标准，您可以扫描下方二维码并发送\"Ginas体验\"来交互",
+      intro: "Ginas客服是一款革命性的AI客服系统，能够24/7为您的客户提供专业、高效的服务。它能够定制多种沟通风格，确保每位客户都能获得个性化的体验。",
       qrCode: "https://i.ibb.co/h9PrWwp/d414c2276c408c604393e41760fbb49.jpg"
     },
     {
@@ -26,7 +26,7 @@ const FeaturedTechnologies = () => {
       title: "NutriSense健康管理",
       description: "Sense the unseen",
       features: ["营养监测", "健康管理", "流程自动化", "知识管理"],
-      intro: "NutriSense健康管理系统是您的个人健康助手。让用户与食物交互，获得营养含量以及摄入建议，它不仅能够监测您的营养摄入，还能为您制定个性化的健康管理计划，让您的健康状况尽在掌握。",
+      intro: "NutriSense健康管理系统是您的个人健康助手，它不仅能够监测您的营养摄入，还能为您制定个性化的健康管理计划。",
       qrCode: "https://i.ibb.co/h9PrWwp/d414c2276c408c604393e41760fbb49.jpg"
     }
   ];
@@ -35,18 +35,18 @@ const FeaturedTechnologies = () => {
     <section id="technologies" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">我们的AI技术</h2>
-        <div className="space-y-12">
+        <div className="grid grid-cols-1 gap-8">
           {technologies.map((tech, index) => (
             <div 
               key={index} 
               className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300"
             >
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:flex-row h-auto md:h-[300px]">
                 <div 
-                  className="md:w-1/3 cursor-pointer"
+                  className="md:w-1/3 cursor-pointer h-64 md:h-full"
                   onClick={() => setSelectedTech(tech)}
                 >
-                  <div className="relative h-64 md:h-full">
+                  <div className="relative h-full">
                     <img 
                       src={tech.image} 
                       alt={tech.title} 
@@ -59,18 +59,20 @@ const FeaturedTechnologies = () => {
                     </div>
                   </div>
                 </div>
-                <div className="md:w-2/3 p-6 md:p-8">
-                  <div className="hidden md:block mb-4">
-                    <h3 className="text-2xl font-semibold mb-2">{tech.title}</h3>
-                    <p className="text-gray-600">{tech.description}</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    {tech.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-gray-700">
-                        <ChevronRight className="h-4 w-4 mr-2 text-primary" />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
+                <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="hidden md:block mb-4">
+                      <h3 className="text-2xl font-semibold mb-2">{tech.title}</h3>
+                      <p className="text-gray-600">{tech.description}</p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      {tech.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center text-gray-700">
+                          <ChevronRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                   <button
                     className="w-full md:w-auto bg-primary text-white px-8 py-2 rounded-md hover:bg-secondary transition duration-300"
