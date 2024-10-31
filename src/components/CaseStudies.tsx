@@ -9,7 +9,7 @@ const CaseStudies = () => {
           <div className="bg-gray-50 p-6 rounded-lg">
             <img src="https://i.ibb.co/YX2s5Pt/DALL-E-2024-10-30-10-17-41-A-business-office-scene-showing-a-person-sitting-at-a-desk-with-multiple.webp" alt="案例研究 1" className="w-full h-48 object-cover rounded-lg mb-4" />
             <h3 className="text-xl font-semibold mb-2">To B:大健康私域全链重构</h3>
-            <p className="text-gray-600">引流、运营、售前、售后一人控制全链路，一人等于若干团队</p>
+            <p className="text-gray-600">引流、运营、售前、售后一人控制全标生物全链路，一人等于若干团队，服务300w+C端用户</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
             <img src="https://i.ibb.co/Tby3Gqp/DALL-E-2024-10-30-10-19-57-An-educational-decision-making-flowchart-showing-steps-from-evaluating-a.webp" alt="案例研究 2" className="w-full h-48 object-cover rounded-lg mb-4" />
