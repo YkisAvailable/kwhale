@@ -8,8 +8,8 @@ const Hero = () => {
       <CodeAnimation />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">智能带来增长</h1>
-          <p className="text-xl mb-8">业务模型新概念重塑</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">业务增长新动力重构</h1>
+          <p className="text-xl mb-8">业务模式新概念重塑</p>
           <a
             href="#contact"
             className="inline-flex items-center bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
